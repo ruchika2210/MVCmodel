@@ -3,6 +3,7 @@ const app=express()
 const User=require('./model/user')
 app.set('view engine','ejs')
 app.use(express.urlencoded())
+const bcrypt=require('bcryptjs')
 
 app.get('/',(req,res) =>{
     // res.send("hello world")
